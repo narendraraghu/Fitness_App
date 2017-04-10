@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Welcome </h1>
+
+<p th:text="'PassWord: ' + ${login.getPassword()}"/>
+
+<p th:text="'Welcome Your UserId: ' + ${login.getUserId()}"/>
+<a href="/login">Submit another message</a>
+</body>
+</html>
